@@ -37,23 +37,54 @@ portfolio/
 - **SEO Optimized** - Proper meta tags and semantic HTML structure
 - **Accessibility** - ARIA labels, keyboard navigation, color contrast
 
-## 🔗 Portfolio Links
-This portfolio serves as the central hub linking to specialized repositories:
+## 🔗 Portfolio Architecture
+This portfolio demonstrates coding expertise across the four most in-demand languages, with cross-cutting DevOps and cloud skills applied to each:
 
-### **Featured Projects**
-- **[TypeScript Cloud Projects](https://github.com/davidxjohnson/typescript-cloud-projects)** - AWS CDK, Kubernetes, professional testing
-- **Go DevOps Tools** *(Coming Soon)* - High-performance CLI utilities and operators
-- **Java Enterprise Services** *(Coming Soon)* - Spring Boot microservices and integrations
-- **Python Automation** *(Coming Soon)* - AWS automation and data pipelines
+### **🔵 TypeScript Projects**
+**Repository:** [typescript-cloud-projects](https://github.com/davidxjohnson/typescript-cloud-projects)
+- **AWS CDK Infrastructure** - EKS clusters, serverless architectures
+- **Kubernetes API Integration** - Container orchestration and management
+- **Professional Testing Practices** - 97.61% coverage with comprehensive test suites
+- **CI/CD Workflows** - GitHub Actions with branch protection and automated deployments
 
-### **Case Studies**
-- **[Refactoring for Testability](https://github.com/davidxjohnson/typescript-cloud-projects/blob/main/docs/REFACTORING_FOR_TESTABILITY_OVERVIEW.md)** - Legacy code transformation achieving 97.61% coverage
+### **🟢 Go DevOps Tools** *(Coming Soon)*
+**Repository:** `go-devops-toolkit` *(planned)*
+- **High-Performance CLI Utilities** - System administration and deployment tools
+- **Kubernetes Operators** - Custom resource management and automation
+- **Cloud Resource Management** - AWS SDK integration for infrastructure automation
+- **Concurrent Processing** - Multi-threaded operations for scalable solutions
+
+### **🟠 Java Enterprise Services** *(Coming Soon)*
+**Repository:** `java-enterprise-stack` *(planned)*
+- **Spring Boot Microservices** - RESTful APIs and service mesh architecture
+- **Event-Driven Architecture** - Kafka integration for real-time data processing
+- **Legacy System Integration** - Bridge patterns for enterprise modernization
+- **Enterprise Security** - OAuth2, JWT, and comprehensive monitoring solutions
+
+### **🔵 Python Automation** *(Coming Soon)*
+**Repository:** `python-automation-suite` *(planned)*
+- **AWS Automation Scripts** - Boto3-based resource management and monitoring
+- **Data Pipeline Engineering** - ETL processes and data transformation workflows
+- **Infrastructure Configuration** - Ansible playbooks and system configuration
+- **Monitoring & Alerting** - Custom metrics and automated incident response
+
+### **🛠️ Cross-Cutting Skills Applied Across All Languages**
+- **AWS Cloud Architecture** - Multi-region deployments, disaster recovery, cost optimization
+- **Infrastructure as Code** - CDK, Terraform, CloudFormation across different use cases
+- **Container Orchestration** - Docker, Kubernetes, EKS in various implementation contexts
+- **CI/CD Pipeline Design** - Language-specific build tools with standardized deployment patterns
+- **Testing Strategies** - Unit, integration, and end-to-end testing adapted per language ecosystem
+- **Security Practices** - SAST, DAST, dependency scanning, and compliance automation
+
+### **📋 Technical Case Studies**
+- **[Refactoring for Testability](https://github.com/davidxjohnson/typescript-cloud-projects/blob/main/docs/REFACTORING_FOR_TESTABILITY_OVERVIEW.md)** - TypeScript legacy code transformation achieving 97.61% coverage
+- **DevOps Transformation: 2 Weeks to 2 Hours** *(Coming Soon)* - Multi-language CI/CD pipeline standardization
 
 ## 🛠️ Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/davidxjohnson/portfolio.git
-cd portfolio
+git clone https://github.com/davidxjohnson/davidxjohnson.github.io.git
+cd davidxjohnson.github.io
 
 # Serve locally (any HTTP server will work)
 python -m http.server 8000
