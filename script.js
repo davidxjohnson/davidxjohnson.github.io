@@ -1,20 +1,20 @@
 // Portfolio Interactive Features
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
-    
+
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
                 const targetPosition = targetSection.offsetTop - headerHeight - 20;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-in');
@@ -73,11 +73,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Technology badge hover effects
     const techBadges = document.querySelectorAll('.tech-badge, .tech-tag');
     techBadges.forEach(badge => {
-        badge.addEventListener('mouseenter', function() {
+        badge.addEventListener('mouseenter', function () {
             this.style.transform = 'scale(1.05)';
         });
-        
-        badge.addEventListener('mouseleave', function() {
+
+        badge.addEventListener('mouseleave', function () {
             this.style.transform = 'scale(1)';
         });
     });
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Project card click tracking (for analytics)
     const projectLinks = document.querySelectorAll('.project-card a');
     projectLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             const projectName = this.closest('.project-card').querySelector('h3').textContent;
             console.log(`Clicked project: ${projectName}`);
             // Here you could add analytics tracking
@@ -96,18 +96,18 @@ document.addEventListener('DOMContentLoaded', function() {
     function createMobileMenu() {
         const nav = document.querySelector('.nav');
         const navMenu = document.querySelector('.nav-menu');
-        
+
         // Check if mobile menu button already exists
         if (nav.querySelector('.mobile-menu-toggle')) return;
-        
+
         const mobileToggle = document.createElement('button');
         mobileToggle.className = 'mobile-menu-toggle';
         mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
         mobileToggle.style.display = 'none';
-        
+
         nav.querySelector('.nav-container').appendChild(mobileToggle);
-        
-        mobileToggle.addEventListener('click', function() {
+
+        mobileToggle.addEventListener('click', function () {
             navMenu.classList.toggle('mobile-open');
             const icon = this.querySelector('i');
             icon.className = navMenu.classList.contains('mobile-open') ? 'fas fa-times' : 'fas fa-bars';
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Responsive menu handling
     function handleResize() {
         const isMobile = window.innerWidth <= 768;
-        
+
         if (isMobile) {
             createMobileMenu();
             document.querySelector('.mobile-menu-toggle').style.display = 'block';
