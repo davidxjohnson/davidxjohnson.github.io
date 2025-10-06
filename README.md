@@ -77,7 +77,7 @@ This portfolio demonstrates coding expertise across the four most in-demand lang
 - **Security Practices** - SAST, DAST, dependency scanning, and compliance automation
 
 ### **📋 Technical Case Studies**
-- **[Refactoring for Testability](https://github.com/davidxjohnson/typescript-cloud-projects/blob/main/case-studies/testability-refactor.md)** - TypeScript legacy code transformation achieving 97.61% coverage
+- **[Refactoring for Testability](https://github.com/davidxjohnson/case-studies/blob/main/legacy-code-refactoring-for-testability/)** - TypeScript legacy code transformation achieving 97.61% coverage
 - **DevOps Transformation: 2 Weeks to 2 Hours** *(Coming Soon)* - Multi-language CI/CD pipeline standardization
 
 ## 🛠️ Local Development
