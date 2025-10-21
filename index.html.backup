@@ -24,7 +24,6 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#case-studies">Case Studies</a></li>
                     <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -47,8 +46,7 @@
                 </div>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="assets/resume/David-Johnson-Resume.pdf" target="_blank" class="btn btn-secondary">Download
-                        Resume</a>
+                    <a href="resume.html" class="btn btn-secondary">Download Resume</a>
                 </div>
             </div>
         </section>
@@ -249,62 +247,74 @@
 
         <section id="case-studies" class="case-studies">
             <div class="container">
-                <h2>Case Studies</h2>
-                <p class="section-subtitle">Selected case studies and useful algorithms from real-world DevOps and
-                    engineering practice</p>
-                <ul class="case-study-list">
-                    <li class="case-study-list-item">
-                        <a href="https://github.com/davidxjohnson/case-studies/blob/main/legacy-code-refactoring-for-testability/"
-                            target="_blank" class="case-study-link">
-                            Legacy Code Refactoring for Testability
-                            <span class="tooltiptext">Transformed a 59-line monolithic TypeScript file into a
-                                maintainable, testable architecture achieving 97.61% test coverage.</span>
-                        </a>
-                        <span class="case-study-tags small-tags">
-                            <span class="tag planned-tag">Planned</span>
+                <h2>Case Studies & Transformations</h2>
+                <p class="section-subtitle">Real-world DevOps transformations and technical leadership examples</p>
+
+                <div class="case-study-grid">
+                    <div class="case-study-card">
+                        <h3>Legacy Code Refactoring for Testability</h3>
+                        <p class="case-study-summary">Transformed a 59-line monolithic TypeScript file into a
+                            maintainable, testable architecture achieving 97.61% test coverage.</p>
+
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <span class="metric-value">97.61%</span>
+                                <span class="metric-label">Test Coverage</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Function Coverage</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Zero</span>
+                                <span class="metric-label">Production Bugs</span>
+                            </div>
+                        </div>
+
+                        <div class="case-study-tags">
                             <span class="tag">Architecture</span>
                             <span class="tag">Testing</span>
                             <span class="tag">Mentoring</span>
-                        </span>
-                    </li>
-                    <li class="case-study-list-item coming-soon">
-                        <span class="case-study-link tooltip coming-soon-text">DevOps Transformation: 2 Weeks to 2 Hours
-                            <span class="tooltiptext">DevOps Transformation: 2 Weeks to 2 Hours</span>
-                        </span>
-                        <span class="case-study-tags small-tags">
-                            <span class="tag planned-tag">Planned</span>
+                        </div>
+
+                        <a href="https://github.com/davidxjohnson/case-studies/blob/main/legacy-code-refactoring-for-testability/"
+                            class="case-study-link" target="_blank">
+                            Read Full Case Study <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="case-study-card coming-soon">
+                        <h3>DevOps Transformation: 2 Weeks to 2 Hours</h3>
+                        <p class="case-study-summary">Led organizational transformation reducing deployment time from 2
+                            weeks to 2 hours through automation and cultural change.</p>
+
+                        <div class="case-study-metrics">
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Time Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">85%</span>
+                                <span class="metric-label">Error Reduction</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">Team</span>
+                                <span class="metric-label">Scale Impact</span>
+                            </div>
+                        </div>
+
+                        <div class="case-study-tags">
                             <span class="tag">Leadership</span>
                             <span class="tag">CI/CD</span>
                             <span class="tag">Process</span>
-                        </span>
-                    </li>
-                </ul>
+                        </div>
+
+                        <span class="case-study-link coming-soon-text">Coming Soon</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="useful-algorithms" class="useful-algorithms">
-            <div class="container">
-                <h2>Useful Algorithms</h2>
-                <p class="section-subtitle">Selected algorithms and coding patterns for infrastructure, DevOps, and
-                    software engineering</p>
-                <ul class="algorithm-list">
-                    <li class="algorithm-list-item">
-                        <a href="https://github.com/davidxjohnson/java-practice/tree/main/maxConcurant" target="_blank"
-                            class="algorithm-link tooltip">
-                            Sweep-Line: Identify Concurrent Intervals
-                            <span class="tooltiptext">A sweep line algorithm is a technique used to efficiently process
-                                intervals or events that occur over a timeline.</span>
-                        </a>
-                        <span class="algorithm-tags small-tags">
-                            <span class="tag planned-tag">Planned</span>
-                            <span class="tag">Interval</span>
-                            <span class="tag">Sweep Line</span>
-                            <span class="tag">Concurrency</span>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </section>
         <section id="certifications" class="certifications">
             <div class="container">
                 <h2>Certifications & Professional Development</h2>
@@ -349,37 +359,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Resume Section -->
-        <section id="resume" class="resume-section">
-            <div class="container">
-                <h2 class="section-title">Resume</h2>
-                <div class="resume-content">
-                    <div class="resume-preview">
-                        <div class="resume-card">
-                            <div class="resume-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <div class="resume-info">
-                                <h3>David Johnson - Resume</h3>
-                                <p>Complete professional background, experience, and qualifications</p>
-                                <div class="resume-actions">
-                                    <a href="assets/resume/David-Johnson-Resume.pdf" target="_blank"
-                                        class="btn btn-primary">
-                                        <i class="fas fa-eye"></i> View Resume
-                                    </a>
-                                    <a href="assets/resume/David-Johnson-Resume.pdf" download="David-Johnson-Resume.pdf"
-                                        class="btn btn-secondary">
-                                        <i class="fas fa-download"></i> Download PDF
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
 
         <section id="contact" class="contact">
             <div class="container">
