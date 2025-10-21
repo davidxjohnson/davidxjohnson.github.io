@@ -973,7 +973,47 @@ section h2 {
 }
 
 .planned-tag {
-    background: var(--gray-400);
-    color: white;
+    background: var(--gray-500);
+    color: #fff;
     font-weight: var(--font-weight-medium);
+}
+
+.case-algo-flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.case-studies-box,
+.algorithms-box {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    padding: 2rem;
+    flex: 1 1 350px;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.case-studies-box h2,
+.algorithms-box h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.inline-tags {
+    display: inline-flex;
+    gap: 2px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.inline-tags .tag {
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-weight: 500;
 }
