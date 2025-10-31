@@ -22,7 +22,7 @@
                 <ul class="nav-menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#case-studies-algorithms">Case Studies/Algorithms</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -34,16 +34,69 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Senior Cloud Engineer & DevOps Leader</h1>
+                <h1 class="hero-title">Project Manager, Cloud Engineer, DevOps Leader</h1>
                 <p class="hero-subtitle">Leading technical transformations using multiple languages - 5+ years building
                     scalable cloud infrastructure and driving DevOps adoption at enterprise scale</p>
                 <div class="hero-technologies">
-                    <span class="tech-badge">AWS</span>
-                    <span class="tech-badge">TypeScript</span>
-                    <span class="tech-badge">Go</span>
-                    <span class="tech-badge">Kubernetes</span>
-                    <span class="tech-badge">CDK</span>
-                    <span class="tech-badge">CI/CD</span>
+                    <span class="tech-badge tooltip">
+                        <i class="fab fa-aws" style="font-size: 2.5em; display: block; margin-bottom: 0.3em;"></i>
+                        <span style="font-size: 0.8em;">AWS</span>
+                        <span class="tooltiptext">5+ years production AWS experience.</span>
+                    </span>
+                    <span class="tech-badge tooltip">
+                        <i class="fab fa-js-square" style="font-size: 2.5em; display: block; margin-bottom: 0.3em;"></i>
+                        <span style="font-size: 0.8em;">TypeScript</span>
+                        <span class="tooltiptext">Production TypeScript with 97.61% test coverage and modern monorepo
+                            architecture.</span>
+                    </span>
+                    <span class="tech-badge tooltip">
+                        <i class="fab fa-java" style="font-size: 2.5em; display: block; margin-bottom: 0.3em;"></i>
+                        <span style="font-size: 0.8em;">Java</span>
+                        <span class="tooltiptext">27+ HackerRank algorithms solved with modern Java features and
+                            enterprise patterns.</span>
+                    </span>
+                    <span class="tech-badge tooltip">
+                        <i class="fas fa-hashtag" style="font-size: 2.5em; display: block; margin-bottom: 0.3em;"></i>
+                        <span style="font-size: 0.8em;">C#</span>
+                        <span class="tooltiptext">Enterprise development with .NET frameworks and cloud-native
+                            applications.</span>
+                    </span>
+                    <span class="tech-badge tooltip">
+                        <i class="fab fa-golang" style="font-size: 2.5em; display: block; margin-bottom: 0.3em;"></i>
+                        <span style="font-size: 0.8em;">Go</span>
+                        <span class="tooltiptext">Infrastructure practice with concurrent processing, algorithms, and
+                            Kubernetes operators.</span>
+                    </span>
+                    <span class="tech-badge tooltip">
+                        <i class="fas fa-dharmachakra"
+                            style="font-size: 2.5em; display: block; margin-bottom: 0.3em;"></i>
+                        <span style="font-size: 0.8em;">Kubernetes</span>
+                        <span class="tooltiptext">K8s evangelist and teacher.</span>
+                    </span>
+                    <span class="tech-badge tooltip">
+                        <div
+                            style="position: relative; font-size: 2.5em; display: block; margin-bottom: 0.3em; height: 1em;">
+                            <i class="fas fa-cloud"
+                                style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); color: white;"></i>
+                            <i class="fas fa-code"
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 0.6em; color: var(--dark-blue);"></i>
+                        </div>
+                        <span style="font-size: 0.8em;">CDK</span>
+                        <span class="tooltiptext">AWS CDK infrastructure deployment for EKS clusters and cloud
+                            automation.</span>
+                    </span>
+                    <span class="tech-badge tooltip">
+                        <i class="fas fa-cogs" style="font-size: 2.5em; display: block; margin-bottom: 0.3em;"></i>
+                        <span style="font-size: 0.8em;">CI/CD</span>
+                        <span class="tooltiptext">Professional pipelines with branch protection, automated testing, and
+                            deployment strategies.</span>
+                    </span>
+                    <span class="tech-badge tooltip">
+                        <i class="fas fa-code" style="font-size: 2.5em; display: block; margin-bottom: 0.3em;"></i>
+                        <span style="font-size: 0.8em;">Algorithms</span>
+                        <span class="tooltiptext">Problem solving with data structures and algorithms across multiple
+                            languages.</span>
+                    </span>
                 </div>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -88,10 +141,10 @@
                             <h3>5+</h3>
                             <p>Years AWS Experience</p>
                         </div>
-                        <div class="stat">
+                        <!--div class="stat">
                             <h3>27+</h3>
                             <p>HackerRank Algo Solved</p>
-                        </div>
+                        </div-->
                         <div class="stat">
                             <h3>4</h3>
                             <p>Programming Languages</p>
@@ -108,34 +161,37 @@
                     practices</p>
 
                 <div class="project-grid">
-                    <div class="project-card featured">
-                        <div class="project-header">
-                            <i class="fab fa-js-square project-icon typescript"></i>
+                    <div class="card" data-status="featured" data-type="project">
+                        <div class="card-header">
+                            <i class="fab fa-js-square card-icon" data-language="typescript"></i>
                             <h3>TypeScript Cloud Projects</h3>
-                            <span class="project-status">Active</span>
+                            <span class="badge badge--gray badge--small">Active</span>
                         </div>
-                        <p class="project-description">Professional TypeScript monorepo showcasing AWS CDK
-                            infrastructure, DevOps automation, and production-ready patterns with 97.61% test coverage.
-                        </p>
+                        <div class="card-content">
+                            <p class="card-description">Professional TypeScript monorepo showcasing AWS CDK
+                                infrastructure, DevOps automation, and production-ready patterns with 97.61% test
+                                coverage.
+                            </p>
 
-                        <div class="project-highlights">
-                            <h4>Key Features:</h4>
-                            <ul>
-                                <li>AWS CDK infrastructure deployment (EKS clusters)</li>
-                                <li>Kubernetes API integration with comprehensive testing</li>
-                                <li>Professional CI/CD with branch protection</li>
-                                <li>Separation of concerns architecture patterns</li>
-                            </ul>
+                            <div class="card-highlights">
+                                <h4>Key Features:</h4>
+                                <ul>
+                                    <li>AWS CDK infrastructure deployment (EKS clusters)</li>
+                                    <li>Kubernetes API integration with comprehensive testing</li>
+                                    <li>Professional CI/CD with branch protection</li>
+                                    <li>Separation of concerns architecture patterns</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-technologies">
+                                <span class="badge badge--gray">AWS CDK</span>
+                                <span class="badge badge--gray">Kubernetes</span>
+                                <span class="badge badge--gray">Vitest</span>
+                                <span class="badge badge--gray">CI/CD</span>
+                            </div>
                         </div>
 
-                        <div class="project-technologies">
-                            <span class="tech-tag">AWS CDK</span>
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Vitest</span>
-                            <span class="tech-tag">CI/CD</span>
-                        </div>
-
-                        <div class="project-links">
+                        <div class="card-footer">
                             <a href="https://github.com/davidxjohnson/typescript-cloud-projects" class="btn btn-primary"
                                 target="_blank">
                                 <i class="fab fa-github"></i> View Repository
@@ -143,32 +199,34 @@
                         </div>
                     </div>
 
-                    <div class="project-card active">
-                        <div class="project-header">
-                            <i class="fab fa-golang project-icon go"></i>
+                    <div class="card" data-status="active" data-type="project">
+                        <div class="card-header">
+                            <i class="fab fa-golang card-icon" data-language="go"></i>
                             <h3>Go Infrastructure Practice</h3>
-                            <span class="project-status">Active</span>
+                            <span class="badge badge--gray badge--small">Active</span>
                         </div>
-                        <p class="project-description">Algorithm practice and infrastructure-focused Go development,
-                            including set theory implementations and concurrent processing patterns.</p>
+                        <div class="card-content">
+                            <p class="card-description">Algorithm practice and infrastructure-focused Go development,
+                                including set theory implementations and concurrent processing patterns.</p>
 
-                        <div class="project-highlights">
-                            <h4>Current Features:</h4>
-                            <ul>
-                                <li>Symmetric difference algorithm with recursive design</li>
-                                <li>Prime number algorithms (Euclid/Gauss methods)</li>
-                                <li>Concurrent processing and Go routine patterns</li>
-                                <li>Kubernetes operators and CRDs (post-certification)</li>
-                            </ul>
+                            <div class="card-highlights">
+                                <h4>Current Focus:</h4>
+                                <ul>
+                                    <li>Symmetric difference algorithm with recursive design</li>
+                                    <li>Prime number algorithms (Euclid/Gauss methods)</li>
+                                    <li>Concurrent processing and Go routine patterns</li>
+                                    <li>Kubernetes operators and CRDs (post-certification)</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-technologies">
+                                <span class="badge badge--gray">Algorithms</span>
+                                <span class="badge badge--gray">Concurrency</span>
+                                <span class="badge badge--gray">Kubernetes</span>
+                            </div>
                         </div>
 
-                        <div class="project-technologies">
-                            <span class="tech-tag">Algorithms</span>
-                            <span class="tech-tag">Concurrency</span>
-                            <span class="tech-tag">Kubernetes</span>
-                        </div>
-
-                        <div class="project-links">
+                        <div class="card-footer">
                             <a href="https://github.com/davidxjohnson/go-practice" class="btn btn-primary"
                                 target="_blank">
                                 <i class="fab fa-github"></i> View Repository
@@ -176,31 +234,33 @@
                         </div>
                     </div>
 
-                    <div class="project-card active">
-                        <div class="project-header">
-                            <i class="fab fa-java project-icon java"></i>
+                    <div class="card" data-status="active" data-type="project">
+                        <div class="card-header">
+                            <i class="fab fa-java card-icon" data-language="java"></i>
                             <h3>Java Modern Development</h3>
-                            <span class="project-status">Active</span>
+                            <span class="badge badge--gray badge--small">Active</span>
                         </div>
-                        <p class="project-description">Modern Java development practice with algorithm solving and
-                            enterprise patterns, rebuilding fluency with current language features.</p>
+                        <div class="card-content">
+                            <p class="card-description">Modern Java development practice with algorithm solving and
+                                enterprise patterns, rebuilding fluency with current language features.</p>
 
-                        <div class="project-highlights">
-                            <h4>Current Focus:</h4>
-                            <ul>
-                                <li>Algorithm practice (24+ HackerRank solutions)</li>
-                                <li>Modern Java language features and patterns</li>
-                                <li>Enterprise development patterns</li>
-                                <li>Spring Boot microservices (planned)</li>
-                            </ul>
+                            <div class="card-highlights">
+                                <h4>Current Focus:</h4>
+                                <ul>
+                                    <li>Algorithm practice (27+ HackerRank solutions)</li>
+                                    <li>Modern Java language features and patterns</li>
+                                    <li>Enterprise development patterns</li>
+                                    <li>Spring Boot microservices (planned)</li>
+                                </ul>
+                            </div>
+
+                            <div class="card-technologies">
+                                <span class="badge badge--gray">Algorithms</span>
+                                <span class="badge badge--gray">Modern Java</span>
+                            </div>
                         </div>
 
-                        <div class="project-technologies">
-                            <span class="tech-tag">Algorithms</span>
-                            <span class="tech-tag">Modern Java</span>
-                        </div>
-
-                        <div class="project-links">
+                        <div class="card-footer">
                             <a href="https://github.com/davidxjohnson/java-practice" class="btn btn-primary"
                                 target="_blank">
                                 <i class="fab fa-github"></i> View Repository
@@ -215,22 +275,22 @@
             <div class="container">
                 <h2 style="text-align:center; margin-bottom:2rem;">Case Studies &amp; Useful Algorithms</h2>
                 <div class="case-algo-flex">
-                    <div class="case-studies-box">
+                    <div class="card content-box" data-type="case-studies">
                         <h3
                             style="display:flex;align-items:center;gap:0.5em;font-size:1.25rem;font-weight:600;color:#1e293b;margin-bottom:1.5rem;">
                             <i class="fas fa-book" style="color:#2563eb;"></i> Case Studies
                         </h3>
-                        <ul class="case-study-list">
-                            <li class="case-study-list-item">
+                        <ul class="algorithm-list">
+                            <li class="algorithm-list-item">
                                 <a href="https://github.com/davidxjohnson/case-studies/blob/main/legacy-code-refactoring-for-testability/"
-                                    target="_blank" class="case-study-link tooltip">
+                                    target="_blank" class="algorithm-link tooltip">
                                     Legacy Code Refactoring for Testability
                                     <span class="tooltiptext">Transformed a 59-line monolithic TypeScript file into a
                                         maintainable, testable architecture achieving 97.61% test coverage.</span>
                                 </a>
                             </li>
-                            <li class="case-study-list-item coming-soon">
-                                <span class="case-study-link tooltip coming-soon-text">DevOps Transformation: 2 Weeks to
+                            <li class="algorithm-list-item coming-soon">
+                                <span class="algorithm-link tooltip coming-soon-text">DevOps Transformation: 2 Weeks to
                                     2
                                     Hours
                                     <span class="tooltiptext">DevOps Transformation: 2 Weeks to 2 Hours</span>
@@ -239,7 +299,7 @@
                             <!-- ...existing code... -->
                         </ul>
                     </div>
-                    <div class="algorithms-box">
+                    <div class="card content-box" data-type="algorithms">
                         <h3
                             style="display:flex;align-items:center;gap:0.5em;font-size:1.25rem;font-weight:600;color:#1e293b;margin-bottom:1.5rem;">
                             <i class="fas fa-calculator" style="color:#2563eb;"></i> Useful Algorithms
